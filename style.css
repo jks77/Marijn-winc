@@ -1,0 +1,106 @@
+body {
+	/* height: 100%; */
+	background-color: #27252b;
+	color: white;
+	margin: 0;
+	padding: 0;
+	font-family: "Bebas Neue", cursive;
+}
+
+header {
+	background-color: #0088a9;
+	margin: 0;
+	padding: 0;
+}
+
+h1 {
+	display: flex;
+	justify-content: center;
+	font-size: 50px;
+	margin: 0;
+	padding: .3em;
+}
+
+ul {
+	display: flex;
+	justify-content: space-between;
+	align-items: baseline;
+	padding: .6em 5em;
+}
+
+li {
+	list-style-type: none;
+	font-size: 30px;
+	margin-right: 50px;
+	/* margin-left: 10px; */
+}
+
+img {
+	width: 300px;
+	/* ALGEMENE OPMERKING: height hoeft niet, als de posters allemaal even hoog zijn. als je zelf height op zet, dan kunnen de proporties verkeerd gaan */
+	height: 500px;
+	padding: 0 10px 10px;
+	opacity: 0.5;
+	transition: opacity 0.2s;
+	/* OPMERKING: HEB DEZE NOG TOEGEVOEGD ZODAT NIET STRETCHED IVM HEIGHT 500px */
+	object-fit: cover;
+}
+
+img:hover {
+	opacity: 1;
+}
+
+input[type="radio"] {
+	display: none;
+}
+
+.list-of-movies {
+	display: block;
+	margin-left: 100px;
+	margin-right: 100px;
+}
+
+#searchbar {
+	margin-left: 10px;
+	width: 80%;
+	height: 30px;
+	resize: none;
+	overflow: auto;
+	cursor: text;
+	font-family: "Bebas Neue", cursive;
+	font-size: 30px;
+	text-align: left;
+	padding: 5px;
+	padding-left: 1.2em;
+	margin-top: -10px;
+	background-image: url(vergrootglas.jpg);
+	background-size: 20px;
+	background-repeat: no-repeat;
+	background-position: left;
+	background-position-x: 5px;
+	outline: none;
+}
+
+input,
+label {
+	cursor: pointer;
+	padding-right: 10px;
+}
+
+.buttons > li {
+	transition: all 0.2s;
+}
+
+.buttons > li:hover {
+	color: rgb(255, 255, 110);
+}
+
+.checked {
+	color: rgb(255, 255, 110);
+	border-bottom: 2px solid rgb(255, 255, 110);
+}
+
+.not-checked {
+	color: white;
+	border-bottom: none;
+}
